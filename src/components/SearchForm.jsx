@@ -21,6 +21,9 @@ const SearchForm = (props) => {
         e.preventDefault();
         console.log('handle submit funciton. do something ')
         props.onSubmit({ origin, destination });
+        // empty the input fields 
+        setDestination('');
+        setOrigin('');
     }
 
     return (
