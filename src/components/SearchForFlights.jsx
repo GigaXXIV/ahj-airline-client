@@ -1,10 +1,14 @@
 import React, { Component } from "react";
+import SearchForm from "./SearchForm";
+import SearchResults from "./SearchResults";
 
 class SearchForFlights extends Component {
     render(){
         return(
             <div>
-                Search for flight parent component is coming 
+                {/* child components to be updated by Andrew*/}
+                <SearchForm />
+                <SearchResults />
             </div>
         )
     }
