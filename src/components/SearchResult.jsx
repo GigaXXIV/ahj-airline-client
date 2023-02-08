@@ -9,10 +9,10 @@ class SearchResult extends Component {
                     flight => 
                     <ul>
                         <li>Date: {flight.date}</li>
-                        <li>Flight: {flight.flightno} </li>
+                        <li>Flight: <a href={`/flights/${flight.id}/showpage`}>{flight.flightno}</a></li>
                         <li> Origin: {flight.origin}</li>
                         <li> Destination: {flight.destination} </li>
-                        <li>Plane: {flight.name} </li>
+                        <li>Plane:{flight.name}</li>
                     </ul>
 
                 )

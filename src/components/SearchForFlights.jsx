@@ -8,7 +8,6 @@ import axios from "axios";
 
 // URL for flights and planes 
 const FLIGHTS_URL = "http://localhost:3000/flights.json";
-const PLANES_URL = "http://localhost:3000/planes.json";
 
 class SearchForFlights extends Component {
     // save the state of the form
@@ -26,7 +25,8 @@ class SearchForFlights extends Component {
     findFlights = (content) => {
         const origin = content.origin;
         const destination = content.destination;  
-        let mmmmatchedFlights = [];
+
+
         axios.get(FLIGHTS_URL).then(
             (response) => {
                 let matchedFlights = [];
@@ -41,11 +41,7 @@ class SearchForFlights extends Component {
                 })
             });
 
-        axios.get(PLANES_URL).then(
-            (response)=>{
-                this.setState({planes: response.data})
-            }
-        )
+
     }
 
     render()   {
