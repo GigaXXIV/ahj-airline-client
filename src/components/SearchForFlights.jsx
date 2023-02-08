@@ -6,6 +6,7 @@ class SearchForFlights extends Component {
     render(){
         return(
             <div>
+              
                 {/* child components to be updated by Andrew*/}
                 <SearchForm />
                 <SearchResults />
