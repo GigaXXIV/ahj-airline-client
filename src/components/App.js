@@ -8,7 +8,6 @@ function App() {
     <div className="App">
       <h1>AHJ Airlines</h1>
       {/* Parent Component */}
-      {/* <SearchForFlights /> */}
       <Routes>
         <Route exact path="/" element={<SearchForFlights />} />
         <Route path="/flights/:flightId/showpage" element={<ShowPage />} />
