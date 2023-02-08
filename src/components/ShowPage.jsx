@@ -41,7 +41,11 @@ const ShowPage = ({ match }) => {
 
   
   return (
-    <div>
+  <div className="container text-center">
+  <div className="row align-items-center">
+    <div className="col-md-5">
+    </div>
+    <div className="col-md-2">
       <h1>Available Seats</h1>
       <table style={{ height: "300px", overflow: "auto" }}>
         <tbody>
@@ -69,6 +73,10 @@ const ShowPage = ({ match }) => {
         </div>
       )}
     </div>
+    <div className="col-md-5">
+    </div>
+  </div>
+</div>
   );
 };
 
