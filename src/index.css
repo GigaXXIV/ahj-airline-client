@@ -27,8 +27,7 @@ h1 {
   text-align: center;
 }
 
-.bookingform {
-  align-items: center;
-  text-align: center;
-  align-content: center;
+.input-field {
+  width: 300px;
+  margin: auto;
 }
