@@ -9,6 +9,12 @@ function App() {
   return (
     <div className="App">
       <h1>AHJ Airlines</h1>
+      <Link to="/">
+          <button>
+            User
+          </button>
+      </Link>
+
       <Link to="/admin/">
           <button>
             Admin
