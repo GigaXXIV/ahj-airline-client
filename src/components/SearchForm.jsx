@@ -6,11 +6,11 @@ const SearchForm = (props) => {
 
     const _handleInput = (e) => {
         if (e.target.name === 'origin') {
-            console.log('origin', e.target.value);
-            setOrigin(e.target.value);
+            // console.log('origin', e.target.value);
+            setOrigin(e.target.value.toUpperCase());
         } else if (e.target.name === 'destination') {
-            console.log('destination', e.target.value);
-            setDestination(e.target.value);
+            // console.log('destination', e.target.value);
+            setDestination(e.target.value.toUpperCase());
         }
         
         // if i use the following line, i get the live input data saved to the parent state :( 
@@ -19,7 +19,6 @@ const SearchForm = (props) => {
 
     const _handleSubmit = (e) => {
         e.preventDefault();
-        console.log('handle submit funciton. do something ')
         props.onSubmit({ origin, destination });
         // empty the input fields 
         setDestination('');
