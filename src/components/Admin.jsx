@@ -87,7 +87,7 @@ const FlightCreateForm = (props) => {
             <input type="text" placeholder="Origin" name="origin" value={ flight.origin } onChange={ _handleChange }/>
             <input type="text" placeholder="Destination" name="destination" value={ flight.destination }  onChange={ _handleChange }/>
             <input type="date" placeholder="date" name="date" value={ flight.date } onChange={ _handleChange } /> 
-            {/* <input type="text" placeholder="Plane Name" name="name" value={ flight.name } onChange={ _handleChange } /> */}
+            <input type="text" placeholder="Plane Name" name="name" value={ flight.name } onChange={ _handleChange } />
             <input type="submit" value="Create" />
         </form>
     )
