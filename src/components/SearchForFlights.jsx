@@ -26,7 +26,6 @@ class SearchForFlights extends Component {
     findFlights = (content) => {
         const origin = content.origin;
         const destination = content.destination;  
-        let mmmmatchedFlights = [];
         axios.get(FLIGHTS_URL).then(
             (response) => {
                 let matchedFlights = [];
@@ -40,12 +39,7 @@ class SearchForFlights extends Component {
                     flights: matchedFlights
                 })
             });
-
-        axios.get(PLANES_URL).then(
-            (response)=>{
-                this.setState({planes: response.data})
-            }
-        )
+            
     }
 
     render()   {
