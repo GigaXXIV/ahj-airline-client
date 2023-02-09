@@ -21,12 +21,12 @@ function App() {
             <div className="navbar-nav mb-2 mb-lg-0 buttonmover">
               <li className="nav-item">
                 <Link to="/">
-                  <button className="menubar nav-item">User</button>
+                  <button className="menubar nav-item Button">User</button>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link to="/admin/">
-                  <button className="menubar nav-item">Admin</button>
+                  <button className="menubar nav-item Button">Admin</button>
                 </Link>
               </li>
             </div>

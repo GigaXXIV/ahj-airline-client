@@ -36,7 +36,7 @@ const SearchForm = (props) => {
             <input type="text" placeholder="Destination" name="destination" value={destination} onInput={_handleInput} />
             </div>
             <div className="centerbutton">
-            <input type="submit" value='Search' />
+            <input type="submit" value='Search' className="Button" />
             </div>
         </form>
 
