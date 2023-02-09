@@ -45,6 +45,7 @@ class Admin extends Component {
     render() {
         return (
             <div>
+                <h3>Create new flight</h3>
                 <FlightCreateForm onSubmit={ this.saveFlights }/> 
                 <NewFlights flights={ this.state.flights }/>
             </div>
@@ -88,7 +89,7 @@ const FlightCreateForm = (props) => {
             <input type="text" placeholder="Destination" name="destination" value={ flight.destination }  onChange={ _handleChange }/>
             <input type="date" placeholder="date" name="date" value={ flight.date } onChange={ _handleChange } /> 
             <input type="text" placeholder="Plane Name" name="name" value={ flight.name } onChange={ _handleChange } />
-            <input type="submit" value="Create" />
+            <input type="submit" value="Create" className="Button"/>
         </form>
         </div>
     )
@@ -97,9 +98,9 @@ const FlightCreateForm = (props) => {
 const NewFlights = (props) => {
     return (
         <div>
-            <h1>All Flights</h1>
+            <h3>All Flights</h3>
             <div className="tabletag">
-            <table style={{width: "50%"}}>
+            <table style={{width: "58%"}}>
                 <thead>
                     <tr>
                         <th style={{padding: "10px"}}>Flight Number</th>

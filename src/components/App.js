@@ -20,12 +20,12 @@ function App() {
           <ul className="navbar-nav mb-2 mb-lg-0 col-md-5">
             <div className="navbar-nav mb-2 mb-lg-0 buttonmover">
               <li className="nav-item">
-                <Link to="/">
+                <Link to="/" style={{ color: "white" }}>
                   <button className="menubar nav-item Button">User</button>
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/admin/">
+                <Link to="/admin/" style={{ color: "white" }}>
                   <button className="menubar nav-item Button">Admin</button>
                 </Link>
               </li>

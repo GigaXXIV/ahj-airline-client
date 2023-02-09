@@ -29,7 +29,7 @@ const ShowPage = ({ match }) => {
 
 
   const handleBookingConfirmation = () => {
-    alert("Booking Confirmed!");
+    alert("Booking Confirmed! Safe travels, my friend!");
     setTimeout(() => {
       window.location.assign("http://localhost:3001");
     }, 1);
@@ -55,7 +55,7 @@ const ShowPage = ({ match }) => {
   return (
   <div className="container text-center">
   <div className="row align-items-center">
-  <h1>Available Seats</h1>
+  <h3>Available Seats</h3>
     <div className="col-md-3">
     </div>
     <div className="col-md-6">
@@ -83,7 +83,7 @@ const ShowPage = ({ match }) => {
     </div>
     {selectedSeat && (
   <div>
-    <h2>Selected Seat: {selectedSeat}</h2>
+    <h4 className="toppadding">Selected Seat: {selectedSeat}</h4>
     <form>
       <div className="form-group">
         <label htmlFor="email">Email:</label>
@@ -97,7 +97,7 @@ const ShowPage = ({ match }) => {
         <label htmlFor="credit-card">Credit Card:</label>
         <input type="text" id="credit-card" className="input-field form-control" />
       </div>
-      <button onClick={handleBookingConfirmation}>Confirm Booking</button>
+      <button onClick={handleBookingConfirmation} className="margintop Button">Confirm Booking</button>
     </form>
   </div>
 )}

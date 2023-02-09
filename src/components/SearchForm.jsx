@@ -28,8 +28,8 @@ const SearchForm = (props) => {
     return (
         <form onSubmit={ _handleSubmit } className="formtag">
 
-            <h3>Search your flight</h3>
-            <div className="centertag">
+            <h3 className="bottompadding">Search your flight</h3>
+            <div className="centertag bottompadding">
             Origin:
             <input type="text" placeholder="Origin" name="origin" value={origin} onInput={_handleInput} />
             Destination:
