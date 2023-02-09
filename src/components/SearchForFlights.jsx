@@ -47,7 +47,7 @@ class SearchForFlights extends Component {
     render()   {
         return (
             <div>
-                <h1>Parent Component: Search For Flights </h1>
+                {/* <h1>Search For Flights </h1> */}
                 <SearchForm onSubmit={ this.findFlights }/>
                 <SearchResult searches={ this.state }/>
             </div>

@@ -14,7 +14,8 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, #1ba098, #deb992, #8fdede, #1ba098);
+  background-color: white;
+  /* background: linear-gradient(to bottom, #deb992, #efd5b8); */
   z-index: -1;
 }
 
@@ -25,9 +26,79 @@ code {
 
 h1 {
   text-align: center;
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+h2 {
+  font-size: 15px;
+}
+
+h3 {
+  text-align: center;
+}
+
+img {
+  max-width: 200px;
+  margin-top: -60px;
 }
 
 .input-field {
   width: 300px;
   margin: auto;
+}
+
+.searchbar {
+  margin: auto;
+}
+
+.menubar {
+  font-size: 20px;
+}
+
+.centertag {
+  margin-left: 500px;
+  align-items: center;
+}
+.centerbutton {
+  margin-left: 700px;
+  align-items: center;
+}
+
+.nav-link {
+  transition: transform 0.2s;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+  color: blanchedalmond;
+}
+
+.tabletag {
+  margin-left: 500px;
+}
+
+.admintag {
+  margin-left: 300px;
+}
+
+.formtag {
+  padding-bottom: 50px;
+}
+
+.toppadding {
+  padding-top: 100px;
+}
+
+.buttonmover {
+  margin-left: -300px;
+  margin-top: -125px;
+  /* padding-left: -300px;
+  padding-top: -130px; */
+}
+
+.imgmover {
+  margin-left: 300px;
+  padding-bottom: 50px;
+  /* margin-top: 150px; */
 }

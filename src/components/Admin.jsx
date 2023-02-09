@@ -45,7 +45,6 @@ class Admin extends Component {
     render() {
         return (
             <div>
-                Admin can create a flight
                 <FlightCreateForm onSubmit={ this.saveFlights }/> 
                 <NewFlights flights={ this.state.flights }/>
             </div>
@@ -82,6 +81,7 @@ const FlightCreateForm = (props) => {
     }
 
     return (
+        <div className="admintag formtag toppadding">
         <form onSubmit={ _handleSubmit }>
             <input type="text" placeholder="Flight Number" name="flightno" value={ flight.flightno} onChange={ _handleChange }/>
             <input type="text" placeholder="Origin" name="origin" value={ flight.origin } onChange={ _handleChange }/>
@@ -90,6 +90,7 @@ const FlightCreateForm = (props) => {
             <input type="text" placeholder="Plane Name" name="name" value={ flight.name } onChange={ _handleChange } />
             <input type="submit" value="Create" />
         </form>
+        </div>
     )
 }
 
@@ -97,7 +98,8 @@ const NewFlights = (props) => {
     return (
         <div>
             <h1>All Flights</h1>
-            <table style={{width: "100%"}}>
+            <div className="tabletag">
+            <table style={{width: "50%"}}>
                 <thead>
                     <tr>
                         <th style={{padding: "10px"}}>Flight Number</th>
@@ -119,6 +121,7 @@ const NewFlights = (props) => {
                     ))}
                 </tbody>
             </table>
+        </div>
         </div>
     )
 }

@@ -3,9 +3,10 @@ import React, { Component } from "react";
 class SearchResult extends Component {
     render(){
         return (
-            <div>
-                <h1>Search Result</h1>
-                <table style={{width: "100%"}}>
+            <div >
+                <h3>Search Result</h3>
+                <div className="tabletag">
+                <table style={{width: "50%"}}>
                     <thead>
                         <tr>
                             <th style={{padding: "10px"}} >Date</th>
@@ -28,7 +29,8 @@ class SearchResult extends Component {
                         )}
                     </tbody>
                 </table>
-            </div>
+                </div>
+                </div>
         )
     };
 }

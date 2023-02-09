@@ -85,7 +85,6 @@ const ShowPage = ({ match }) => {
   <div>
     <h2>Selected Seat: {selectedSeat}</h2>
     <form>
-      
       <div className="form-group">
         <label htmlFor="email">Email:</label>
         <input type="email" id="email" className="input-field form-control" />
